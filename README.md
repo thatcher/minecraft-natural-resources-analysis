@@ -1,4 +1,4 @@
-= Distribution of Natural Resources in Minecraft Pi
+Distribution of Natural Resources in Minecraft Pi
 
 This is a science fair project for my son Weilun to focus on the subject of
 Computer Science -- Statistics.  I'll be doing the heavy lifting but the focus
