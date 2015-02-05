@@ -12,5 +12,5 @@ simple [MIT License] so have at.
 Thanks again,
 [Thatcher]
 
-[MIT License] http://opensource.org/licenses/MIT
+[MIT License]: http://opensource.org/licenses/MIT
 [Thatcher]: http://github.com/thatcher/
