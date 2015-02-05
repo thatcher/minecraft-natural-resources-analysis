@@ -9,6 +9,6 @@ Thanks for any feedback from Minecraft fans and programmers, and for any other
 science fair moms and dads, please feel free to use this.  We are using the
 simple MIT License ( http://opensource.org/licenses/MIT ) so have at.
 
-* [Thatcher]
+[Thatcher]
 
 [Thatcher]: http://github.com/thatcher/
