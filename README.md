@@ -14,3 +14,48 @@ Thanks again,
 
 [MIT License]: http://opensource.org/licenses/MIT
 [Thatcher]: http://github.com/thatcher/
+
+## Connecting to your Raspberry Pi
+
+Once you have your Pi on your local network, and you've started the Minecraft Pi
+game, you can actually do the rest of the work on another computer, talking to
+the Mincraft server over the network.
+
+All you need to know to connect is the Pi's network address.  The simplest way
+is to run **ifconfig** from your Pi's Terminal.
+
+```
+
+$ ifconfig
+...
+en1: flags=8863<UP,BROADCAST,SMART,RUNNING,SIMPLEX,MULTICAST> mtu 1500
+  ether 20:c9:d0:e5:7e:85
+  inet6 fe80::22c9:d0ff:fee5:7e85%en1 prefixlen 64 scopeid 0x6
+  inet 192.168.1.12 netmask 0xffffff00 broadcast 192.168.1.255
+  nd6 options=1<PERFORMNUD>
+  media: autoselect
+  status: active
+...
+
+```
+
+You get a lot of output, but the relevant section is above.  Most home networks
+will assign your Pi an address like 192.168.1.12 (not 192.168.1.255, thats the
+router itself.)
+
+Now you can change your settings.py file:
+
+```{python}
+SERVER_ADDRESS = "192.168.1.12"
+```
+
+### SSH
+SSH is probably the most effective way to log on to your Pi to check CPU load,
+make sure processes arent stuck, etc.
+
+### Remote Desktop
+We have a keyboard setup on our Pi and its connected to our TV, but everyone
+competes for the TV so we wanted to be able to check on the Pi via a Remote
+Descktop.  This link helped us set up a vnc server:
+
+http://computers.tutsplus.com/tutorials/take-control-of-your-raspberry-pi-using-your-mac-pc-ipad-or-phone--mac-54603

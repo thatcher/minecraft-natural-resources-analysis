@@ -46,7 +46,7 @@ y = settings.Y_LEVEL
 y_next = settings.Y_DIRECTION
 is_all_air = False
 
-while(!is_all_air):
+while not is_all_air:
     print("Counting Level %s" % y)
 
     # Reset our storage array
@@ -63,7 +63,7 @@ while(!is_all_air):
     print "Saving Slice %s" % y
     numpy.save('data/world_%s.npy' % y, world_data)
 
-    if not t.sum():
+    if not world_data.sum():
         is_all_air = True
         print "Level %s is all air, stopping counting" % y
 
