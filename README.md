@@ -59,3 +59,7 @@ competes for the TV so we wanted to be able to check on the Pi via a Remote
 Descktop.  This link helped us set up a vnc server:
 
 http://computers.tutsplus.com/tutorials/take-control-of-your-raspberry-pi-using-your-mac-pc-ipad-or-phone--mac-54603
+
+You can then connect to your Pi with Safari which has a built-in vnc client:
+
+http://www.davidtheexpert.com/post.php?id=5
