@@ -2,3 +2,5 @@ mcpi
 *.pyc
 
 *.log
+
+.ipynb_checkpoints/*
